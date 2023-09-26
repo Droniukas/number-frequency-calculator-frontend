@@ -1,0 +1,41 @@
+#main-input-and-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.error-div {
+  color: var(--main-error-color);
+  height: 10px;
+  margin-bottom: 10px;
+  transition: opacity 0.1s ease-in-out;
+  opacity: 0;
+}
+
+.result-error-div,
+.result-div {
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.result-error-div {
+  color: var(--main-error-color);
+}
+
+.result-div {
+  color: green;
+}
+
+.visible {
+  opacity: 1;
+}
