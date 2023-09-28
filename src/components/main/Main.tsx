@@ -85,7 +85,8 @@ const Main = () => {
           Successful, now check the API console!
         </div>
         <div className={`result-error-div ${showResultError && "visible"}`}>
-          Something, went wrong...
+          Something, went wrong...{" "}
+          {"(make sure the backend is running correctly)"}
         </div>
       </div>
     </div>
